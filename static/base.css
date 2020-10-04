@@ -1,0 +1,16 @@
+.home-bg{
+ background-image: url("/static/img/hateruma.jpg");
+ background-size: cover;
+ background-attachment: fixed;
+ }
+.home-bg::before{
+  /* 透過した黒を上から重ねるイメージ */
+  background-color: rgba(0,0,0,0.4);
+  /* 自由に位置指定 */
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: ' ';
+}

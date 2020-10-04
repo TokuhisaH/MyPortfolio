@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+
+{% block header %}
+<!--
+<div class="jumbotron">
+  <h1 class="display-4">Hiroki Tokuhisa</h1>
+  <p class="lead">徳久弘樹の自作ウェブサイトです。趣味や活動について記しています。</p>
+</div>
+-->
+{% endblock header %}
+
+{% block content %}
+<body class ="home-bg">
+  <div class ="container">
+    <div class="card" style="width: 18rem; display: inline-block;">
+      <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"/><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
+      <div class="card-body">
+        <h5 class="card-title">Profile</h5>
+        <p class="card-text">自己紹介</p>
+        <a href="{% url 'profile' %}" class="btn btn-primary">こちら</a>
+      </div>
+    </div>
+    
+    <div class="card" style="width: 18rem; display: inline-block;">
+      <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"/><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
+      <div class="card-body">
+        <h5 class="card-title">blog</h5>
+        <p class="card-text">旅とサッカーの話</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+    
+    <div class="card" style="width: 18rem; display: inline-block;">
+      <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"/><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
+      <div class="card-body">
+        <h5 class="card-title">ギャラリー</h5>
+        <p class="card-text">趣味で撮った写真のギャラリー</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+    
+    <div class="card" style="width: 18rem; display: inline-block;">
+      <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"/><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
+      <div class="card-body">
+        <h5 class="card-title">活動</h5>
+        <p class="card-text">学生時代の研究活動</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+    
+    <div class="card" style="width: 18rem; display: inline-block;">
+      <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"/><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
+      <div class="card-body">
+        <h5 class="card-title">連絡先になりそうなもの</h5>
+        <p class="card-text">何かあればこちらまで</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+</body>
+{% endblock content %}
