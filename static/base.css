@@ -3,14 +3,23 @@
  background-size: cover;
  background-attachment: fixed;
  }
+ /*背景を暗くする*/
 .home-bg::before{
-  /* 透過した黒を上から重ねるイメージ */
   background-color: rgba(0,0,0,0.4);
-  /* 自由に位置指定 */
   position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   content: ' ';
+}
+/*タイトル文字*/
+.home-bg h1{
+  color: white;
+  font-size:5.0em;
+  margin: auto;
+  padding-top:35%;
+  min-height:100vh;
+  width:100%;
+  text-align: center;
 }
