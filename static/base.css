@@ -14,12 +14,32 @@
   content: ' ';
 }
 /*タイトル文字*/
-.home-bg h1{
+
+.home-title{
+  height:85vh;
+  }
+.home-title h1{
+  position: relative;
   color: white;
   font-size:5.0em;
-  margin: auto;
-  padding-top:35%;
-  min-height:100vh;
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+  padding-top:25vh;
+  padding-bottom:5vh;
   width:100%;
   text-align: center;
+  z-index:1;
 }
+
+.home-title h5{
+  position: relative;
+  color: white;
+  text-align: center;
+  padding-bottom:25vh;
+  width:100%;
+  z-index:1;
+  }
+
+
+.home-card{
+  }
