@@ -50,7 +50,7 @@ body{
   }
 
 
-.home-profile h2{
+h2{
   position: relative;
   color: white;
   font-size:3.5em;
@@ -60,14 +60,39 @@ body{
   z-index:1;
   }
 
+.home-profile-contents{
+  text-align: center;
+  margin:5% auto;
+  }
 
 .home-profile img{
   position: relative;
   border-radius: 30px;
-  width:40%;
+  height:60vh;
   min-width:200px;
   z-index:1;
   }
+  
+.home-profile table{
+  padding-left:0;
+  position: relative;
+  float:right;
+  color: white;
+  }
+  
+.home-profile th {
+  text-align: left;
+  font-size: 30px;
+}
+.home-profile td {
+  font-size: 20px;
+  text-align: left;
+}
+
+.home-card{
+  clear:both;
+  }
+
 
 /*矢印*/
 .allow {
