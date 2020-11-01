@@ -7,6 +7,7 @@ body{
  background-image: url("/static/img/hateruma.jpg");
  background-size: cover;
  background-attachment: fixed;
+ width:100%;
  }
  /*背景を暗くする*/
 .home-bg::before{
@@ -36,20 +37,6 @@ body{
   z-index:1;
 }
 
-.home-title h5{
-  position: relative;
-  color: white;
-  text-align: center;
-  padding-bottom:25vh;
-  width:100%;
-  z-index:1;
-  }
-.home-profile {
-  margin: 4vh;
-  
-  }
-
-
 h2{
   position: relative;
   color: white;
@@ -59,37 +46,69 @@ h2{
   text-align: center;
   z-index:1;
   }
+  
+h4{
+  position: relative;
+  color: white;
+  text-align: center;
+  }
 
-.home-profile-contents{
+.home-welcome {
+  margin: 4vh;
+  height:100%;
+  }
+
+.home-welcome-contents{
   text-align: center;
   margin:5% auto;
   }
 
-.home-profile img{
+
+.home-welcome img{
   position: relative;
   border-radius: 30px;
-  height:60vh;
+  width:30%;
   min-width:200px;
   z-index:1;
-  float:left;
   }
   
-.home-profile table{
-  padding-left:0;
-  position: relative;
+@media screen and (max-width : 768px){
+.home-welcome-contents p{
+  position:relative;
   color: white;
   }
-  
-.home-profile th {
-  text-align: left;
-  font-size: 30px;
-}
-.home-profile td {
-  font-size: 20px;
-  text-align: left;
 }
 
+@media screen and (min-width : 768px){
+.home-welcome-contents p{
+  position:relative;
+  color: white;
+  width: 50%;
+  float:right;
+  }
+}
+
+
+.home-aboutme{
+  margin:4vh;
+  clear:both;
+  text-align:center;
+  }
+  
+.home-aboutme-contents{
+  display: inline-block;
+  text-align: left;
+  position:relative;
+  margin:4vh;
+  color:white;
+  clear:both;
+  font-size:1.2em;
+  }
+
+
+
 .home-card{
+  margin:4vh;
   clear:both;
   }
 
