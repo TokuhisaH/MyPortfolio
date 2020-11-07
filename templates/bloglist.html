@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+
+{% block header %}
+{% endblock header %}
+{% block content %}
+<body class ="blog-bg">
+    <div class ="sub-title">
+      <h1>Blog</h1>
+    </div>
+  <div class ='container'>
+    <div class="blog-list">
+    <h3>記事一覧</h3>
+    {% for item in object_list %}
+      <div class="alert alert-success" role="alert">
+        <h3><a href="{% url 'blogdetail' item.pk%}">{{item.title}}</a></h3>
+        <p>{{item.date}}<p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</body>
+{% endblock content %}
