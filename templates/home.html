@@ -84,36 +84,42 @@
     
     <div class ="home-card">
      <h2>Contents</h2>
-     <div class="card-deck">
-     <div class="row">
-         <div class="card text-center" style="width: 18rem;">
+       <ul class="card-item">
+     	   <li>
+     	   <div class="card text-center">
           <div class="card-body">
             <h5 class="card-title">Activity</h5>
             <h6 class="card-subtitle mb-2 text-muted">活動</h6>
             <p class="card-text">作ったものや学生時代の研究など、自分のこれまでの活動を  まとめたページ</p>
            <a href="{% url 'activity' %}" class="btn btn-primary">こちら</a>
           </div>
-        </div>
+         </div>
+        </li>
         
-        <div class="card text-center" style="width: 18rem;">
+        <li>
+        <div class="card text-center">
           <div class="card-body">
             <h5 class="card-title">Photography</h5>
             <h6 class="card-subtitle mb-2 text-muted">写真</h6>
             <p class="card-text">趣味で撮った写真をまとめたページ</p>
            <a href="{% url 'photography' %}" class="btn btn-primary">こちら</a>
           </div>
-        </div>
+         </div>
+        </li>
         
-         <div class="card text-center" style="width: 18rem;">
+        <li>
+         <div class="card text-center">
           <div class="card-body">
             <h5 class="card-title">Blog</h5>
             <h6 class="card-subtitle mb-2 text-muted">日記</h6>
             <p class="card-text">観たサッカーの試合の記録や旅の思い出を綴るページ</p>
-           <a href="#" class="btn btn-primary">こちら</a>
+           <a href="{% url 'bloglist' %}" class="btn btn-primary">こちら</a>
           </div>
-        </div>
+         </div>
+        </li>
         
-         <div class="card text-center" style="width: 18rem;">
+        <li>
+         <div class="card text-center">
           <div class="card-body">
             <h5 class="card-title">Contact</h5>
             <h6 class="card-subtitle mb-2 text-muted">連絡先</h6>
@@ -121,10 +127,9 @@
            <a href="{% url 'contact' %}" class="btn btn-primary">こちら</a>
           </div>
         </div>
-
+        </li>
+      </ul>
       </div>
-    </div>
-    </div>
   </div>
 </body>
 {% endblock content %}
