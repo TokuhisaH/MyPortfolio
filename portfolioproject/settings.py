@@ -125,7 +125,14 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 #アップロードしたメディアの保存先を指定
+<<<<<<< HEAD
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 
 #そのURL
 MEDIA_URL = '/media/'
+=======
+MEDIA_ROOT = os.path.join(BASE_DIR,'static/media')
+#そのURL
+#この文字列は自由でいい
+MEDIA_URL = '/static/media/'
+>>>>>>> origin/master

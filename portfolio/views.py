@@ -1,7 +1,11 @@
 from django.shortcuts import render,redirect
 from django.views.generic import ListView,DetailView,CreateView,DeleteView,UpdateView
 from .models import BlogModel
+<<<<<<< HEAD
 import requests,json
+=======
+
+>>>>>>> origin/master
 
 def homefunc(request):
     return render(request, 'home.html',{})
@@ -10,6 +14,7 @@ def activityfunc(request):
     return render(request, 'activity.html',{})
     
 def photographyfunc(request):
+<<<<<<< HEAD
     if request.method == 'GET':
         access_token='EAAL3zjlTZBiYBACnz5m4saeHvgxRrlAZAmRpWVhJvUAuZCQobf5PYOfd4fK2TggST5dl2jNTfnOIePT4CSczoAWfWcofSocpDHieRXwUXoZBZCSY8FdZAw9KWZAnDx8ZB885i7jOdUXZAotjOCO3teaC7WZAIrTltho9Cv23HmqoetkQZDZD'
         instagram_business_account="17841401949842264"
@@ -40,14 +45,20 @@ def photographyfunc(request):
         return render(request, 'photography.html',{'result': r.json(),'count':count})
     else:
         return render(request, 'photography.html',{})
+=======
+    return render(request, 'photography.html',{})
+>>>>>>> origin/master
     
 class BlogList(ListView):
     template_name = 'bloglist.html'
     model = BlogModel
+<<<<<<< HEAD
     def get_queryset(self):
         # 公開フラグがTrueで、作成日順に並び替え
         return super().get_queryset().order_by('-date')
     
+=======
+>>>>>>> origin/master
 
 class BlogDetail(DetailView):
     template_name='blogdetail.html'

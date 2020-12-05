@@ -2,6 +2,7 @@
 body{
  font-family: 'M PLUS Rounded 1c', sans-serif;
   }
+<<<<<<< HEAD
   
   
 /*ホーム以外*/
@@ -27,6 +28,9 @@ body{
   z-index:1;
 }
   
+=======
+
+>>>>>>> origin/master
 /*ホーム */
 .home-bg{
  background-image: url("/static/img/hateruma.jpg");
@@ -159,6 +163,7 @@ h4{
     }
 }
   
+<<<<<<< HEAD
 /*アクティビティ*/
 .activity-bg{
  background-image: url("/static/img/activity.jpg");
@@ -181,6 +186,8 @@ h4{
   position:relative;
   color:white;
   }
+=======
+>>>>>>> origin/master
   
 /*ブログ*/
 .blog-bg{
@@ -212,6 +219,7 @@ h4{
 .blogdetail-img{
   text-align:center;
   }
+<<<<<<< HEAD
 
 /*ギャラリー */
 .photography-photos{
@@ -244,6 +252,24 @@ h4{
   left: 0;
   content: ' ';
 }
+=======
+/*ホーム以外*/
+.sub-title{
+  height:50vh;
+  }
+.sub-title h1{
+  position: relative;
+  color: white;
+  font-size:4.0em;
+  margin-top: 1vh;
+  padding-top:25vh;
+  padding-bottom:0;
+  width:100%;
+  text-align: center;
+  z-index:1;
+}
+
+>>>>>>> origin/master
 
 
 
@@ -317,6 +343,7 @@ h4{
 footer{
   clear:both;
   position: relative;
+<<<<<<< HEAD
   bottom: 0;
   left: 0;
   width: 100%;
@@ -328,4 +355,9 @@ footer{
 footer .p{
   
   margin-top:30px;
+=======
+  height:50px;
+  color:white;
+  text-align:center;
+>>>>>>> origin/master
   }

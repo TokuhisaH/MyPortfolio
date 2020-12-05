@@ -12,6 +12,7 @@
     <div class="blog-list">
     <h3>記事一覧</h3>
     {% for item in object_list %}
+<<<<<<< HEAD
       <a href="{% url 'blogdetail' item.pk%}">
         <div class="card mb-3" style="max-width: 100%; height: 30%">
           <div class="row no-gutters">
@@ -32,6 +33,8 @@
           </div>
         </div>
       </a>
+=======
+>>>>>>> origin/master
       <div class="alert alert-success" role="alert">
         <h3><a href="{% url 'blogdetail' item.pk%}">{{item.title}}</a></h3>
         <p>{{item.date}}<p>
