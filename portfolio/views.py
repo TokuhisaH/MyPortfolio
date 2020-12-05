@@ -1,13 +1,18 @@
 from django.shortcuts import render,redirect
 from django.views.generic import ListView,DetailView,CreateView,DeleteView,UpdateView
-from .models import BlogModel
+from .models import BlogModel,ActivityModel
 import requests,json
 
 def homefunc(request):
     return render(request, 'home.html',{})
     
 def activityfunc(request):
-    return render(request, 'activity.html',{})
+    object_list = ActivityModel.objects.all()
+    return render(request, 'activity.html',{'object_list':object_list})
+
+class ActivityDetail(DetailView):
+    template_name='activitydetail.html'
+    model = ActivityModel
     
 def photographyfunc(request):
     if request.method == 'GET':

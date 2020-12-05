@@ -7,10 +7,11 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.conf.urls import url
 from django.contrib import admin
-from .views import homefunc,activityfunc,photographyfunc,contactfunc,BlogList,BlogDetail
+from .views import homefunc,activityfunc,photographyfunc,contactfunc,BlogList,BlogDetail,ActivityDetail
 
 urlpatterns = [
     url('activity/', activityfunc,name='activity'),
+    url('activitydetail/(?P<pk>\d+)',ActivityDetail.as_view(),name='activitydetail'),
     url('photography/', photographyfunc,name='photography'),
     url('bloglist/',BlogList.as_view(), name='bloglist'),
     url('blogdetail/(?P<pk>\d+)',BlogDetail.as_view(),name='blogdetail'),

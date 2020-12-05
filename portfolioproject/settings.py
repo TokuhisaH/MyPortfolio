@@ -118,8 +118,3 @@ MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 #そのURL
 MEDIA_URL = '/media/'
 
-MEDIA_ROOT = os.path.join(BASE_DIR,'media')
-#そのURL
-#この文字列は自由でいい
-MEDIA_URL = '/media/'
-

@@ -133,28 +133,28 @@ h4{
   }
 
 @media screen and (max-width : 768px){
-.card{
+.home-card .card{
   width:100%;
   margin:2% 0;
   clear:both;
   }
-.card-item{
+.home-card .card-item{
   list-style:none;
   }
 }
 
 @media screen and (min-width : 768px){
-.card-item{
+.home-card .card-item{
   list-style:none;
   text-align:center;
   }
-.card-item li{
+.home-card .card-item li{
   display: inline-block;
   width: 230px;
   height: 250px;
   margin:10px 10px;
   }
-.card-item .card{
+.home-card .card-item .card{
   text-decoration: none;
     }
 }
@@ -181,7 +181,32 @@ h4{
   position:relative;
   color:white;
   }
-
+  
+.activity-card .card-item{
+  list-style:none;
+  text-align:center;
+  }
+.activity-card .card-item li{
+  display: inline-block;
+  width: 230px;
+  margin:10px 10px;
+  }
+.activity-card .card-item .card{
+  text-decoration: none;
+  }
+  
+.activity-bg .container {
+  margin-top:80px;
+  }
+.activity-detail img{
+  width:80%;
+  max-width:500px;
+  margin:auto;
+  }
+.activity-detail h3{
+  margin-top:30px;
+  color: black;
+  }
   
 /*ブログ*/
 .blog-bg{
