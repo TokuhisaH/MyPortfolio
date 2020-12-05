@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+
+{% block header %}
+{% endblock header %}
+{% block content %}
+<body class ="blog-bg">
+  <div class ="sub-title">
+     <a href="{% url 'bloglist' %}"><h1>Blog</h1></a>
+  </div>
+  <div class ='container'>
+    <div class="alert alert-primary" role="alert">
+      <div class="blogdetail-title">
+        <h3>{{object.title}}</h3>
+      </div>
+      <div class="blogdetail-img">
+        <p><img src="{{object.images.url}}" width=70% minwidth=300px></p>
+      </div>
+      <div>
+        <p>{{object.content}}</p>
+        <p>{{object.date}}</p>
+      </div>
+      <a href="{% url 'bloglist' %}" class="btn btn-primary">記事一覧に戻る</a>
+  </div>
+</body>
+{% endblock content %}

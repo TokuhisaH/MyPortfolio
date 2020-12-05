@@ -1,0 +1,135 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block header %}
+{% endblock header %}
+
+{% block content %}
+<body class ="home-bg">
+  <div class ="container">
+    <div class ="home-title">
+      <h1>HIROKI TOKUHISA<br>WEB SITE</h1>
+      <div class="allow"><span></span><span></span><span></span></div>
+    </div>
+    
+    <div class ="home-welcome">
+      <h2>Welcome</h2>
+      <div class ="home-welcome-contents">
+        <img src="{% static 'img/pikachu.jpg' %}" alt="pikachu"/>
+        <p>こんにちは。94年生まれ東京都出身の徳久弘樹と申します。
+        現在は社会人１年目で某モバイル企業で無線通信エンジニアとして働いています。<br>
+        業務で開発することはあまりないのですが、元々好きで勉強してきたスキルを定着させたいと思い、週末などにいろんな開発に挑戦しています。このサイトもその一環で制作しました。
+        このサイトではBlogを書いたり撮った写真のギャラリーを展開したりこれまでの活動を載せたりしています。<br>
+        ゲームをするために１日家に引き篭もったり、かと思えばサッカー観戦をするために海外に行ったり、インドアアウトドア問わず多岐に渡る趣味を有しています。<br>
+        何かあればContactページのSNSなどからお気軽にご連絡くださいませ。
+        </p>
+      </div>
+    </div>
+    <div class="allow"><span></span><span></span><span></span></div>
+    
+    <div class ="home-aboutme">
+      <h2>About Me</h2>
+      <div class ="home-aboutme-contents">
+        <ul>
+          <li>名前
+            <ul>
+              <li>徳久 弘樹（Hiroki Tokuhisa）</li>
+            </ul>
+          </li>
+          <li>出身
+            <ul>
+              <li>東京都墨田区</li>
+            </ul>
+          </li>
+          <li>経歴
+            <ul>
+              <li>2013年　私立東洋高等学校　卒業</li>
+              <li>2014年　明治大学総合数理学部　入学</li>
+              <li>2018年　明治大学総合数理学部　卒業</li>
+              <li>2018年　明治大学大学院先端数理科学研究科博士前期課程　入学</li>
+              <li>2020年　明治大学大学院先端数理科学研究科博士前期課程　修了（工学）</li>
+              <li>2020年　某モバイル企業に無線通信エンジニアとして就職</li>
+            </ul>
+          </li>
+          <li>スキル
+            <ul>
+              <li>言語
+              <ul>
+              <li>HTML,CSS,Python,Processing</li>
+            </ul>
+              <li>フレームワーク
+              <ul>
+              <li>Bootstrap,Django</li>
+              </ul>
+              <li>その他
+              <ul>
+              <li>Windows,Linux,AWS</li>
+              </ul>
+              </li>
+            </ul>
+          </li>
+          <li>研究分野
+            <ul>
+              <li>グループウェアとネットワークサービス（GN）</li>
+              <li>ヒューマンコンピュータインタラクション（HCI）</li>
+              <li>認知科学</li>
+            </ul>
+          </li>
+          <li>好きなもの
+            <ul>
+              <li>サッカー、旅行、ゲーム、写真を撮ること、沖縄</li>
+            </ul>
+          </li>
+      </div>
+    </div>
+    
+    <div class ="home-card">
+     <h2>Contents</h2>
+       <ul class="card-item">
+     	   <li>
+     	   <div class="card text-center">
+          <div class="card-body">
+            <h5 class="card-title">Activity</h5>
+            <h6 class="card-subtitle mb-2 text-muted">活動</h6>
+            <p class="card-text">作ったものや学生時代の研究など、自分のこれまでの活動を  まとめたページ</p>
+           <a href="{% url 'activity' %}" class="btn btn-primary">こちら</a>
+          </div>
+         </div>
+        </li>
+        
+        <li>
+        <div class="card text-center">
+          <div class="card-body">
+            <h5 class="card-title">Photography</h5>
+            <h6 class="card-subtitle mb-2 text-muted">写真</h6>
+            <p class="card-text">趣味で撮った写真をまとめたページ</p>
+           <a href="{% url 'photography' %}" class="btn btn-primary">こちら</a>
+          </div>
+         </div>
+        </li>
+        
+        <li>
+         <div class="card text-center">
+          <div class="card-body">
+            <h5 class="card-title">Blog</h5>
+            <h6 class="card-subtitle mb-2 text-muted">日記</h6>
+            <p class="card-text">観たサッカーの試合の記録や旅の思い出を綴るページ</p>
+           <a href="{% url 'bloglist' %}" class="btn btn-primary">こちら</a>
+          </div>
+         </div>
+        </li>
+        
+        <li>
+         <div class="card text-center">
+          <div class="card-body">
+            <h5 class="card-title">Contact</h5>
+            <h6 class="card-subtitle mb-2 text-muted">連絡先</h6>
+            <p class="card-text">SNSなど徳久と連絡が取れるものを載せたページ</p>
+           <a href="{% url 'contact' %}" class="btn btn-primary">こちら</a>
+          </div>
+        </div>
+        </li>
+      </ul>
+      </div>
+  </div>
+</body>
+{% endblock content %}
