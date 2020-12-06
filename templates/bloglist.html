@@ -19,7 +19,7 @@
         <a href="{% url 'blogdetail' item.pk%}">
           <h5 class="card-title">{{item.title}}</h5>
         </a>
-          <p class="card-text">{{item.content}}</p>
+          <p class="card-text">{{item.content| truncatechars:20}}</p>
           <p class="card-text">{{item.date | date:"Y年n月j日" }}</p>
         </div>
       </div>
