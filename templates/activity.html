@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+
+{% block header %}
+
+
+{% endblock header %}
+{% block content %}
+
+<body class="activity-bg">
+  <div class="sub-title">
+    <h1>Activity</h1>
+    <p>学生自体の研究活動や最近作ったものについて紹介するページです。</p>
+  </div>
+  <div class ="activity-card">
+    <ul class="card-item">
+    {% for item in object_list %}
+     <li>
+
+      <div class="card border-{{item.genre}} mb-3"style="max-width: 18rem;">
+        <svg class="bd-placeholder-img card-img-top" width="100%" height="0" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"></svg>
+        <img src="{{item.images.url}}" width="100%" height="100%"/>
+        <div class="card-body">
+          <h5 class="card-title">{{item.title}}</h5>
+          <a href="{% url 'activitydetail' item.pk%}" class="btn btn-primary">紹介ページ</a>
+        </div>
+      </div>
+
+    </li>
+    {% endfor %}
+    </ul>
+    </div>
+
+
+</body>
+{% endblock content %}

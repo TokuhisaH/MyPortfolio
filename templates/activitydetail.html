@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+
+{% block header %}
+
+
+{% endblock header %}
+{% block content %}
+
+<body class="activity-bg">
+  <div class ="container"height="50%">
+    <div class ="activity-detail">
+      <div class="card mb-3" >
+        <svg class="bd-placeholder-img card-img-top" width="80%" height="0" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"></svg>
+          <h3 class="card-title">{{object.title}}</h3>
+          <img src="{{object.images.url}}"/>
+        <div class="card-body">
+          <h5 class="card-text">{{object.content | linebreaksbr}}</h5>
+        </div>
+        <a href="{{object.link}}" target="_blank" rel="noopener noreferrer">
+          <button type="button" class="btn btn-primary btn-lg btn-block">詳細ページへ(外部)</button>
+        </a>
+        <a href="{% url 'activity' %}">
+          <button type="button" class="btn btn-secondary btn-lg btn-block">一覧に戻る</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+{% endblock content %}

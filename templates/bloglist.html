@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+
+{% block header %}
+{% endblock header %}
+{% block content %}
+<body class ="blog-bg">
+    <div class ="sub-title">
+      <h1>Blog</h1>
+    </div>
+  <div class ='container'>
+    <div class="blog-list">
+    <h3>記事一覧</h3>
+    {% for item in object_list %}
+      <a href="{% url 'blogdetail' item.pk%}">
+        <div class="card mb-3" style="max-width: 100%; height: 30%">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image">
+                <title>{{item.title}}</title>
+                <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image
+                </text>
+              </svg>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">{{item.title}}</h5>
+                <p class="card-text">{{item.content}}</p>
+                <p class="card-text"><small class="text-muted">{{item.date}}</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</body>
+{% endblock content %}
