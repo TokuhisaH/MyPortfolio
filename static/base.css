@@ -132,6 +132,13 @@ h4{
   font-size:1.2em;
   }
 
+.home-aboutme ul{
+    padding-left: 1em;
+}
+
+.home-card ul{
+    padding-left: 1em;
+}
 @media screen and (max-width : 768px){
 .home-card .card{
   width:100%;
