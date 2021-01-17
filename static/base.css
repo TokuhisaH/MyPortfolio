@@ -4,7 +4,8 @@ body{
   }
   
   
-/*ホーム以外*/
+/*-----------------------PC画面*------------------------------------*/
+@media screen and (min-width : 769px){
 .sub-title{
   height:50vh;
   }
@@ -96,26 +97,14 @@ h4{
   min-width:200px;
   z-index:1;
   }
-  
-/*スマホ画面*/
-@media screen and (max-width : 768px){
-.home-welcome-contents p{
-  position:relative;
-  color: white;
-  }
-}
-
-/*PC画面*/
-@media screen and (min-width : 768px){
 .home-welcome-contents p{
   position:relative;
   color: white;
   width: 50%;
   float:right;
   }
-}
-
-
+  
+  
 .home-aboutme{
   margin:4vh;
   clear:both;
@@ -139,18 +128,7 @@ h4{
 .home-card ul{
     padding-left: 1em;
 }
-@media screen and (max-width : 768px){
-.home-card .card{
-  width:100%;
-  margin:2% 0;
-  clear:both;
-  }
-.home-card .card-item{
-  list-style:none;
-  }
-}
 
-@media screen and (min-width : 768px){
 .home-card .card-item{
   list-style:none;
   text-align:center;
@@ -163,8 +141,12 @@ h4{
   }
 .home-card .card-item .card{
   text-decoration: none;
-    }
 }
+.home-card .card-list{
+  text-decoration: none;
+  display:none;
+}
+
   
 /*アクティビティ*/
 .activity-bg{
@@ -279,6 +261,28 @@ h4{
   content: ' ';
 }
 
+
+.contact-bg{
+ background-image: url("/static/img/activity.jpg");
+ background-size: cover;
+ background-attachment: fixed;
+ width:100%;
+ }
+ /*背景を暗くする*/
+.contact-bg::before{
+  background-color: rgba(0,0,0,0.4);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: ' ';
+}
+.contact-bg li{
+  position:relative;
+  color:white;
+ }
+
 /*ホーム以外*/
 .sub-title{
   height:50vh;
@@ -296,7 +300,329 @@ h4{
 }
 
 
+/*フッター*/
+footer{
+  clear:both;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  color:white;
+  text-align:center;
+  }
+  
+footer .p{
+  
+  margin-top:30px;
+  height:50px;
+  color:white;
+  text-align:center;
+  }
 
+}
+/*-------------------------------スマホ画面-----------------------------*/
+@media screen and (max-width : 768px){
+    
+/*ホーム */
+.home-bg{
+ background-image: url("/static/img/hateruma.jpg");
+ background-size: cover;
+ background-attachment: fixed;
+ width:100%;
+ }
+ /*背景を暗くする*/
+.home-bg::before{
+  background-color: rgba(0,0,0,0.4);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: ' ';
+}
+/*タイトル文字*/
+
+.home-title{
+  height:85vh;
+  }
+.home-title h1{
+  position: relative;
+  color: white;
+  font-size:1.5em;
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+  padding-top:25vh;
+  padding-bottom:5vh;
+  width:100%;
+  text-align: center;
+  z-index:1;
+}
+
+h2{
+  position: relative;
+  color: white;
+  font-size:1.5em;
+  margin-top: 10vh;
+  width:100%;
+  text-align: center;
+  z-index:1;
+  }
+  
+h4{
+  position: relative;
+  color: white;
+  text-align: center;
+  }
+
+.home-welcome {
+  margin: 4vh;
+  height:100%;
+  }
+
+.home-welcome-contents{
+  text-align: center;
+  margin:5% auto;
+  }
+
+
+.home-welcome img{
+  position: relative;
+  border-radius: 30px;
+  width:30%;
+  min-width:100px;
+  z-index:1;
+  }
+
+.home-welcome-contents p{
+  position:relative;
+  color: white;
+  font-size:0.8em;
+  }
+  
+.home-aboutme{
+  margin:4vh;
+  clear:both;
+  text-align:center;
+  }
+  
+.home-aboutme-contents{
+  display: inline-block;
+  text-align: left;
+  position:relative;
+  margin:4vh;
+  color:white;
+  clear:both;
+  font-size:0.8em;
+  }
+
+.home-aboutme ul{
+    padding-left: 1em;
+}
+
+.home-card .card-list{
+  margin:auto;
+  width:80%;
+  list-style:none;
+  position: relative;
+  }
+  
+.home-card .card-list li{
+  height:60px;
+  }
+
+.home-card .card-item{
+  list-style:none;
+  display:none;
+  }
+  
+  
+/*アクティビティ*/
+.activity-bg{
+ background-image: url("/static/img/activity.jpg");
+ background-size: cover;
+ background-attachment: fixed;
+ width:100%;
+ }
+ /*背景を暗くする*/
+.activity-bg::before{
+  background-color: rgba(0,0,0,0.4);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: ' ';
+}
+
+.activity-bg h3{
+  position:relative;
+  color:white;
+  }
+  
+.activity-card .card-item{
+  list-style:none;
+  text-align:center;
+  }
+.activity-card .card-item li{
+  display: inline-block;
+  width: 230px;
+  margin:10px 10px;
+  }
+.activity-card .card-item .card{
+  text-decoration: none;
+  }
+  
+.activity-bg .container {
+  margin-top:80px;
+  }
+.activity-detail img{
+  width:80%;
+  max-width:500px;
+  margin:auto;
+  }
+.activity-detail h3{
+  margin-top:30px;
+  color: black;
+  }
+  
+/*ブログ*/
+.blog-bg{
+ background-image: url("/static/img/inskytree.jpg");
+ background-size: cover;
+ background-attachment: fixed;
+ width:100%;
+ }
+ /*背景を暗くする*/
+.blog-bg::before{
+  background-color: rgba(0,0,0,0.4);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: ' ';
+}
+
+.blog-list h3{
+  position:relative;
+  color:white;
+  font-size:1.2em;
+  }
+
+
+.blog-list h5{
+  position:relative;
+  font-size:1.0em;
+  }
+
+.blog-list p{
+  position:relative;
+  font-size:0.8em;
+  }
+.blogdetail-title h3{
+  margin-bottom:5%;
+  }
+  
+.blogdetail-img{
+  text-align:center;
+  }
+
+
+/*ギャラリー */
+.photography-photos{
+  position: relative;
+  text-align: center;
+  margin:0 auto;
+}
+.photography-photos img{
+  width:18%;
+ transition:1s all;
+}
+.photography-photos img:hover{
+  transform:scale(1.2,1.2);
+  transition:1s all;
+}
+
+.photography-bg{
+ background-image: url("/static/img/photography.jpg");
+ background-size: cover;
+ background-attachment: fixed;
+ width:100%;
+ }
+
+.photography-bg::before{
+  background-color: rgba(0,0,0,0.4);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: ' ';
+}
+
+.contact-bg{
+ background-image: url("/static/img/activity.jpg");
+ background-size: cover;
+ background-attachment: fixed;
+ width:100%;
+ }
+ /*背景を暗くする*/
+.contact-bg::before{
+  background-color: rgba(0,0,0,0.4);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: ' ';
+}
+
+.contact-bg li{
+  position:relative;
+  color:white;
+  font-size:18px;
+ }
+
+/*ホーム以外*/
+.sub-title{
+  height:50vh;
+  }
+.sub-title h1{
+  position: relative;
+  color: white;
+  font-size:1.5em;
+  margin-top: 1vh;
+  padding-top:25vh;
+  padding-bottom:0;
+  width:100%;
+  text-align: center;
+  z-index:1;
+}
+.sub-title p{
+  text-align:center;
+  position:relative;
+  font-size:0.8em;
+  color:white;
+  }
+
+
+
+/*フッター*/
+footer{
+  clear:both;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin-top:20px;
+  height: 20px;
+  color:white;
+  font-size:5px;
+  text-align:center;
+  }
+}
+/*--------------PCスマホ共通--------------------------*/
 
 /*矢印*/
 .allow {
@@ -363,23 +689,3 @@ h4{
   }
 }
 
-
-/*フッター*/
-footer{
-  clear:both;
-  position: relative;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 40px;
-  color:white;
-  text-align:center;
-  }
-  
-footer .p{
-  
-  margin-top:30px;
-  height:50px;
-  color:white;
-  text-align:center;
-  }
