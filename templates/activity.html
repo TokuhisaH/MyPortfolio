@@ -16,7 +16,6 @@
     <ul class="card-item">
     {% for item in object_list %}
      <li>
-
       <div class="card border-{{item.genre}} mb-3"style="max-width: 18rem;">
         <svg class="bd-placeholder-img card-img-top" width="100%" height="0" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"></svg>
         <img src="{{item.images.url}}" width="100%" height="100%"/>
@@ -29,6 +28,21 @@
     </li>
     {% endfor %}
     </ul>
+    </div>
+    
+    <div class ="activity-card-mobile">
+       {% for item in object_list %}
+       <a href="{% url 'activitydetail' item.pk%}">
+       <div class="jumbotron">
+        <div class="media">
+          <img src="{{item.images.url}}" width="64px"/>
+          <div class="media-body">
+            <h5 class="mt-0">{{item.title}}</h5>
+          </div>
+        </div>
+        </div>
+        </a>
+        {% endfor %}
     </div>
 
 
