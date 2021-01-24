@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c');
 body{
  font-family: 'M PLUS Rounded 1c', sans-serif;
+  position: relative;
+  height: 100%;
   }
 
 html {
@@ -248,10 +250,11 @@ h4{
   text-align: center;
   margin:0 auto;
 }
+
 .photography-photos img{
-  width:18%;
  transition:1s all;
-}
+ margin:10px 3px;
+ }
 .photography-photos img:hover{
   transform:scale(1.2,1.2);
   transition:1s all;
@@ -568,8 +571,8 @@ h4{
   margin:0 auto;
 }
 .photography-photos img{
-  width:18%;
  transition:1s all;
+ margin:10px 3px;
 }
 .photography-photos img:hover{
   transform:scale(1.2,1.2);
