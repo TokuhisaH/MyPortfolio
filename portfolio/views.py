@@ -16,7 +16,7 @@ class ActivityDetail(DetailView):
     
 def photographyfunc(request):
     if request.method == 'GET':
-        access_token='EAAL3zjlTZBiYBAA74l5OLWGGCFCVIyPMOZCpVLSfFZBaFMlQNWhE3iNx6QMXH71nVSIWncOgh4iaBBVZC4KXTEUlQatXvUPqiaqGEvh1vhjVf9SSdb9lAWZBG1q9gkfDikkbrLae84tJs8BrkxaPUUaelhcJF84S65p7Jj3LHJZAY4T2mteIBP'
+        access_token=''
         instagram_business_account="17841401949842264"
         count=50
         url = 'https://graph.facebook.com/v4.0/'+instagram_business_account+'?fields=media.limit('+str(count)+'){caption,media_url,permalink,timestamp,username}&access_token='+access_token
